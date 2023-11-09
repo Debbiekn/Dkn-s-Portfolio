@@ -1,0 +1,294 @@
+body{     
+    background-image: linear-gradient(to top, rgb(23, 5, 58), rgb(23, 5, 58), rgb(25, 95, 61), rgb(25, 95, 61));
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100%;
+    margin-left: 0%; 
+    background-size:cover;
+}
+ 
+img {
+    mix-blend-mode:hard-light;
+    display:flex;  
+}
+
+.nut img {
+    height: 60px;
+    width: 60px;
+    float: left;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;   
+}
+
+.nuts  img {
+    box-shadow: 10px 10px 12px rgb(164, 173, 205);
+    margin-bottom: 30px;    
+}
+
+.eye  img {
+    box-shadow: 10px 10px 12px rgb(164, 173, 205);
+    margin-bottom: 30px;
+}
+
+.holiday  img {
+    box-shadow: 10px 10px 12px rgb(164, 173, 205);
+    margin-bottom: 30px;
+}
+
+
+.column {
+    flex: 33.33%;
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;    
+    flex-wrap: wrap;
+    margin-right: auto;   
+}
+
+.shape {
+    text-align: center; 
+    border-radius: 45%;
+    width: 230px;
+    margin-left: 80px;
+    font-size: 0.9em;  
+    background-image: linear-gradient(to top, rgb(84, 116, 190), rgb(0, 54, 56));
+    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fade-in-text {
+    color: white;
+    font-family: 'Cinzel', serif;
+    animation: fadeIn 7s;    
+    text-shadow: 3px 2px rgb(27, 33, 55);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+small {
+    font-family: 'EB Garamond', serif;
+}
+
+
+p {    
+    font-size: 1.1em;
+    display:block;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1.2px 1.2px rgb(27, 33, 55);
+    font-family: 'Lugrasimo', cursive;
+    line-height:  35px;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;      
+}
+
+h1 {
+    color: aquamarine;
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    text-align: center;
+    margin:0px;
+    letter-spacing: 5px;
+}
+
+
+
+.About {
+    margin-top: 1%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position:sticky;
+    font-size: 1.1em;
+    font-family: 'Cinzel', serif;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 1.9px rgb(27, 33, 55);
+    margin-bottom: 50px;
+}
+
+.profile {
+    display: grid;
+    position:relative;
+    margin-top: 20px;
+    
+    margin-left: 40%;
+    justify-self: center;
+    max-height: 15%;;
+    max-width: 15%;
+
+    border: 1.5px solid  rgb(0, 54, 56);
+    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+  
+}
+
+.path {
+    display: grid;
+    position:relative ;
+    margin-left: 0%;
+    justify-self: center;
+    max-height: 20%;;
+    max-width: 100%;
+
+    border: 1.5px solid  rgb(0, 54, 56);
+    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    display: grid;
+    position:relative;
+    margin-top: 20px;    
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.Skills {
+    margin-top: 1%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+    position:sticky;
+
+    font-size: 1em;
+    font-family: 'Cinzel', serif;
+    color:  aquamarine;
+    text-align: center;
+    text-shadow: 3px 1.9px rgb(27, 33, 55);
+    margin-bottom: 30px;
+
+}
+
+.shape2 button {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lugrasimo', cursive;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1.2px 1.2px rgb(27, 33, 55);
+    border-radius: 35%;
+    background-image: linear-gradient(to top, rgb(84, 116, 190), black);
+    border: 1.5px solid  rgb(0, 54, 56);
+    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+
+    height: 70px;
+    width: 130px;
+    font-size: 1em;
+    margin-left: 0px;
+    margin-bottom: 5%;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    font-size: 1em;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: -3%;      
+}
+
+
+a {
+    color:white;
+    font-family: 'Lugrasimo', cursive;
+    text-decoration: none;
+    text-shadow: 1.4px 1.4px rgb(27, 33, 55);
+    font-size: 1em;
+    padding-top: 15px;
+    border-top: 0%;   
+}
+
+a:hover {
+    color: rgb(252, 111, 3);
+}
+
+
+footer {
+    width: 100%;
+    display: flexbox;
+    color:white;
+    background-color: black;
+    font-family: 'Lugrasimo', cursive;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+}
+
+
+.message-button {
+    height: 100px;
+    width: 400px;
+
+    margin-bottom: 100px;
+    font-size: 1em;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    background-color: aquamarine;
+
+    color: white;
+    text-align: center;
+    border-radius: 35%;
+    background-image: linear-gradient(to top, rgb(84, 116, 190), black);
+    border: 1.5px solid  rgb(0, 54, 56);
+    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+}
+
+.message-button:hover {
+    cursor: pointer;
+    color: rgb(252, 111, 3);
+}
+
+.message-button:active {
+    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+    transform: translatex(4px);
+    transform: translatey(4px);
+}
+
+.message-button:onclick {
+    color: rgb(3, 252, 98);
+}
+
+
+
