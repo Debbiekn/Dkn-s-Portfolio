@@ -1,5 +1,5 @@
 body{     
-    background-image: linear-gradient(to top, rgb(23, 5, 58), rgb(23, 5, 58), rgb(25, 95, 61), rgb(25, 95, 61));
+    background-image: linear-gradient(to top, rgb(23, 5, 58), rgb(23, 5, 58), rgb(4, 58, 32), rgb(4, 58, 32));
     background-repeat: no-repeat;
     width: auto;
     height: 100%;
@@ -257,38 +257,44 @@ footer {
 }
 
 
-.message-button {
-    height: 100px;
-    width: 400px;
+#messageButton {
+    height: auto;
+    width: 50%;
 
-    margin-bottom: 100px;
     font-size: 1em;
     font-family: 'Cinzel', serif;
-    font-weight: 600;
+    font-size: large;
     background-color: aquamarine;
 
     color: white;
     text-align: center;
-    border-radius: 35%;
-    background-image: linear-gradient(to top, rgb(84, 116, 190), black);
+    border-radius: 5%;
+    background-image: linear-gradient(to top, rgb(84, 116, 190), #926363);
     border: 1.5px solid  rgb(0, 54, 56);
     box-shadow:  5px 5px 3px rgb(89, 100, 141);
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.message-button:hover {
+#messageButton:hover {
     cursor: pointer;
     color: rgb(252, 111, 3);
 }
 
-.message-button:active {
-    box-shadow:  5px 5px 3px rgb(89, 100, 141);
+#messageButton:active {
+    box-shadow:  1px 1px 1px rgb(89, 100, 141);
     transform: translatex(4px);
     transform: translatey(4px);
 }
 
-.message-button:onclick {
-    color: rgb(3, 252, 98);
+
+
+#messageResult{
+    color: white;
+    font-size: 1em;
+    height: auto;
+    width: 100%;
+    
+
 }
-
-
-
