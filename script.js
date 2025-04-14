@@ -1,26 +1,30 @@
 // Now specified only countrys array to be called randomly
 
-const country = ['Costa Rica','Norway','Sahara Desert', 'Phillippines']; 
+const country = ['COSTA RICA','NORWAY','the SAHARA DESERT', 'PHILIPPINES']; 
 
 const randomElement2 = country[Math.floor(Math.random() * country.length)];
 
 
 // repeated the above step for weather array - to be called randomly
-const weather = ['sweaty heat','freezing temperature','dry heat', 'MONSOON that just happened.']; 
+const weather = ['SWEATY heat','FREEZING temperature','DRY heat', 'MONSOON that just happened.']; 
 
 const randomElement3 = weather[Math.floor(Math.random() * weather.length)];
 
 
 // repeated the above step again -  for the advice array - to be called randomly
-const adviceGiven = ['wear loose clothes','remember thermals','keep up the fluids', 'am prepared for ANYTHING!!']; 
+const adviceGiven = ['wear LOOSE clothes','remember THERMALS','keep up the FLUIDS', 'am prepared for ANYTHING!!']; 
 
 const randomElement4 = adviceGiven[Math.floor(Math.random() * adviceGiven.length)];
 
 
 
-// re- retested each sentence out with each different string array 
-console.log(`I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure It will be great, as long as I ` + randomElement4 + `.`);
-
+function destinationResult() {
+    //document.getElementById("messageButton").innerHTML = `I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure It will be great, as long as I ` + randomElement4 + `.`;
+    document.getElementById("messageResult").innerHTML = `I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure it will be great, as long as I ` + randomElement4 + `.`;
+    // re- retested each sentence out with each different string array 
+    //console.log(`I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure It will be great, as long as I ` + randomElement4 + `.`);
+    
+}
 
 
 
