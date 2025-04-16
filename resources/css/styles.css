@@ -219,7 +219,7 @@ li {
 
 section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     color: white;
     text-decoration: none;
@@ -227,8 +227,9 @@ section {
     font-weight: 600;
     text-shadow: 1.2px 1.2px rgb(27, 33, 55);
     background-image: linear-gradient(to top, rgb(84, 116, 190), #926363);
-    height: 30px;
+    height: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 nav {
