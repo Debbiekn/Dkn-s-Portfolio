@@ -1,29 +1,29 @@
-// Now specified only countrys array to be called randomly
-
-const country = ['COSTA RICA','NORWAY','the SAHARA DESERT', 'PHILIPPINES']; 
-
-const randomElement2 = country[Math.floor(Math.random() * country.length)];
-
-
-// repeated the above step for weather array - to be called randomly
-const weather = ['SWEATY heat','FREEZING temperature','DRY heat', 'MONSOON that just happened.']; 
-
-const randomElement3 = weather[Math.floor(Math.random() * weather.length)];
-
-
+// country name array to be called randomly
+const country = ['COSTA RICA','NORWAY','the SAHARA DESERT', 'PHILIPPINES'];
+// weather description array - to be called randomly
+const weather = ['SWEATY heat','FREEZING temperature','DRY heat', 'MONSOON that just happened.'];  
 // repeated the above step again -  for the advice array - to be called randomly
 const adviceGiven = ['wear LOOSE clothes','remember THERMALS','keep up the FLUIDS', 'am prepared for ANYTHING!!']; 
 
-const randomElement4 = adviceGiven[Math.floor(Math.random() * adviceGiven.length)];
-
-
 
 function destinationResult() {
+const randomCountry = country[Math.floor(Math.random() * country.length)];
+
+const randomWeather = weather[Math.floor(Math.random() * weather.length)];
+
+const randomAdvice = adviceGiven[Math.floor(Math.random() * adviceGiven.length)];
+
+const resultMessage = `I've decided to go to ${randomCountry}. I am aware of the ${randomWeather}. I am sure it will be great, as long as I ${randomAdvice}.`;
+
+document.getElementById("messageResult").innerHTML = resultMessage;
+
+
     //document.getElementById("messageButton").innerHTML = `I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure It will be great, as long as I ` + randomElement4 + `.`;
-    document.getElementById("messageResult").innerHTML = `I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure it will be great, as long as I ` + randomElement4 + `.`;
+    //document.getElementById("messageResult").innerHTML = `I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure it will be great, as long as I ` + randomElement4 + `.`;
     // re- retested each sentence out with each different string array 
     //console.log(`I've decided to go to ` + randomElement2 + `.` +` I am aware of the ` + randomElement3 + ` I am sure It will be great, as long as I ` + randomElement4 + `.`);
     
+    //$('#messageResult').html(resultMessage);
 }
 
 
@@ -68,5 +68,3 @@ const destination4 = {
     myDecision() {
         return `I've decided to not go to ${this.country}, especially if a ${this.weather} is due!!. I will another time when ${this.weather}, is over. BUT, I will  ${this.adviceGiven}`
     }
-};
-console.log(destination4.myDecision());*/
