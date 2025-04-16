@@ -193,7 +193,7 @@ input {
 
 }
 
-.shape2 button {
+/*.shape2 button {
     color: white;
     text-decoration: none;
     font-family: 'Cinzel', serif;
@@ -210,6 +210,10 @@ input {
     font-size: 1em;
     margin-left: 0px;
     margin-bottom: 5%;
+}*/
+
+li {
+    padding-right: 8px;
 }
 
 
@@ -217,8 +221,16 @@ section {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
+    color: white;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    text-shadow: 1.2px 1.2px rgb(27, 33, 55);
+    background-image: linear-gradient(to top, rgb(84, 116, 190), #926363);
+    height: 30px;
+    padding-top: 10px;
 
+}
 nav {
     display: flex;
     font-size: 1em;
