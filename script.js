@@ -67,4 +67,4 @@ const destination4 = {
     adviceGiven: 'Be prepared for ANYTHING!!',
     myDecision() {
         return `I've decided to not go to ${this.country}, especially if a ${this.weather} is due!!. I will another time when ${this.weather}, is over. BUT, I will  ${this.adviceGiven}`
-    }
+    }*/
